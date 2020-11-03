@@ -1,0 +1,214 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.5)),
+    url("./login.jpg");
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login {
+  display: block;
+  background-color: rgba(240, 248, 255, 0.527);
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  transform: translate(0px, -50%);
+}
+.login:hover {
+  background-color: rgba(112, 188, 255, 0.527);
+}
+.usname,
+.password {
+  color: antiquewhite;
+  font-weight: bolder;
+  font-size: 20px;
+}
+input {
+  border-radius: 20px;
+  color: rgb(53, 48, 48);
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+  width: 200px;
+}
+.lhead {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(100, 241, 211);
+}
+.submit {
+  display: block;
+  text-align: center;
+  padding: 7px;
+  align-items: center;
+  float: right;
+}
+.submit:hover {
+  background-color: darkgoldenrod;
+}
+input:hover {
+  background-color: rgba(98, 250, 118, 0.534);
+}
+.cap1 {
+  color: antiquewhite;
+  font-size: xxx-large;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0px, -50%);
+}
+.cap2 {
+  color: antiquewhite;
+  font-size: xx-large;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  transform: translate(0px, -50%);
+}
+nav {
+  margin-top: 40px;
+  padding: 15px;
+  width: 100%;
+  padding-left: 40px;
+  border-bottom: solid 4px #f39f9f8c;
+  background-color: rgba(129, 128, 49, 0.589);
+  position: fixed;
+}
+nav a {
+  display: inline-block;
+
+  text-decoration: none;
+  color: rgb(249, 255, 234);
+  margin: 20px;
+  background-color: rgba(0, 255, 255, 0.192);
+  border-radius: 20px;
+  padding: 0px 10px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+a:hover {
+  background-color: rgba(0, 255, 0, 0.315);
+}
+a:active {
+  background-color: #ffffff;
+}
+.gi8 {
+  position: relative;
+  display: inline-block;
+}
+.gi9 {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgba(127, 255, 212, 0.178);
+  z-index: 1;
+}
+.gi9 a {
+  display: block;
+  margin: 2px;
+}
+.gi8:hover .gi9 {
+  display: block;
+}
+
+.learn {
+  color: antiquewhite;
+  display: inline-block;
+  padding: 20px;
+  margin: 3px;
+  border-radius: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: rgba(127, 255, 212, 0.5);
+}
+.learn1 {
+  color: antiquewhite;
+  display: inline-block;
+  padding: 20px;
+  margin: 3px;
+  border-radius: 20px;
+  font-size: large;
+  background-color: rgba(76, 74, 228, 0.5);
+}
+.learn1:hover {
+  background-color: rgba(0, 0, 255, 0.562);
+}
+.learn2 {
+  background-color: rgba(210, 105, 30, 0.301);
+  padding: 15px 40px;
+  position: relative;
+  top: 40px;
+  margin-top: 40px;
+  font-size: x-large;
+}
+.learn2:hover {
+  background-color: rgba(12, 13, 85, 0.76);
+}
+.lsh {
+  color: bisque;
+  display: block;
+  padding: 20px;
+  margin: 3px;
+  border-radius: 20px;
+  background-color: rgba(127, 255, 212, 0.5);
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ls {
+  color: bisque;
+  display: inline-block;
+  font-size: xx-large;
+  padding: 20px;
+  margin: 3px;
+  border-radius: 20px;
+  background-color: rgba(15, 31, 25, 0.5);
+}
+.ls:hover {
+  background-color: rgba(198, 226, 43, 0.699);
+}
+.andr {
+  background-image: url("./android.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.411);
+  text-align: center;
+  width: 70vw;
+  height: 50vh;
+  display: block;
+}
+.react {
+  background-image: url("./react.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.411);
+  text-align: center;
+  width: 70vw;
+  height: 50vh;
+  display: block;
+}
+.angular {
+  background-image: url("./angular.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(0, 0, 0, 0.411);
+  text-align: center;
+  width: 70vw;
+  height: 50vh;
+  display: block;
+}

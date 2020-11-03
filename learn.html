@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="home.html">Home</a>
+        <span class="gi8">
+        <a href="learn.html" >Learn</a>
+        <span class="gi9">
+        <a href="learn.html" >Android</a>
+        <a href="learn.html" >Angular</a>
+        <a href="learn.html" >React</a></span>
+        </span>
+        <a href="about.html">About</a>
+        <a href="letsstart.html">Login</a>
+    </nav>
+    </header>
+    
+   
+    <div ng-app="myApp" ng-controller="namesCtrl">
+        <span class="lsh" >
+            <span ng-click="sele1=true;sele2=false;sele3=flase" class="ls">Android</span>
+            <span ng-click="sele1=false;sele2=true;sele3=flase" class="ls">React</span>
+            <span ng-click="sele1=false;sele2=false;sele3=true" class="ls">ANgular</span>
+        </span>
+        <span ng-if="sele1">
+            <span class="learn" >
+                <span class="learn1" ng-repeat="x in android"  ng-click="$parent.content=x+' This topic '+x+' Is Interesting'">
+                   <span  >{{ x }}</span>
+                  </span>
+                  <span class="andr"><span class="learn2">{{content}}</span></span>
+                </span>
+               
+            </span>
+            <span ng-if="sele2">
+            <span class="learn">
+                <span class="learn1" ng-repeat="x in react ">
+                    {{ x }}
+                  </span>
+                  <span class="react"><span class="learn2">{{content}}</span></span>
+            </span> 
+           
+        </span>
+            <span ng-if="sele3">
+            <span class="learn">
+                <span onclick="" class="learn1" ng-repeat="x in angular ">
+                    {{ x }}
+                  </span>
+                  <span class="angular"><span class="learn2">{{content}}</span></span>
+            </span>
+          
+        </span>
+     </span>
+        
+          
+        
+        
+        </div>
+
+<script>
+    angular.module('myApp', []).controller('namesCtrl', function($scope) {
+        $scope.sele1=false
+        $scope.sele2=false
+        $scope.sele3=false
+        $scope.content="LEarn like You can't live without it!"
+        $scope.android = [
+            'Linear Layout',
+            'Grid Layout',
+            'Constraint Layout',
+            'List View',
+            'Grid View',
+            'Array Addapter',
+        ];
+        $scope.react = [
+            'Component',
+            'Props',
+            'Prams',
+            'State',
+            'functional Component',
+            'Class Component',
+        ];
+        $scope.angular = [
+            'Angular Component',
+            'Angular Parameters',
+            'Module',
+            'BInd',
+            'View',
+            'Angular Views',
+        ];
+    });
+    </script>
+</body>
+</html>

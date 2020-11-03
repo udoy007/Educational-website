@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{position:absolute;left:350px;top:350px;
+        background:url('img/bgv.jpg');background-repeat:no-repeat;
+        background-size:cover;height:950px;width:600px;
+        padding:0px 30px;}
+        .itm{position:absolute;left:250px;top:180px;}
+        .itm2{position:absolute;left:0px;top:180px;}
+        .contain{
+            width: 25vw;
+            margin: auto;
+            position: absolute;
+            top: 30vh;
+            left: 50vw;
+            transform: translate(-50%,0px);
+            padding: 20px;
+            background-color: rgba(12, 12, 56, 0.521);
+        }
+        .contain:hover{
+            background-color: rgba(127, 255, 212, 0.384);
+        }
+        </style> 
+        <script src="java.js"></script>
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+        <a href="home.html">Home</a>
+        <span class="gi8">
+        <a href="learn.html" >Learn</a>
+        <span class="gi9">
+        <a href="learn.html" >Android</a>
+        <a href="learn.html" >Angular</a>
+        <a href="learn.html" >React</a></span>
+        </span>
+        <a href="about.html">About</a>
+        <a href="letsstart.html">Login</a>
+    </nav>
+    </header>
+
+    
+
+<form class="contain"  name="rell" action="project.html" onsubmit="return validate()" >
+	
+
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Name.............:
+	<input type="text"name="username" placeholder="Name"style="font-size:30px;"></p>
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Father Name :
+	<input type="text"name="fathername" placeholder="Father Name"style="font-size:30px;"></p>
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Location.... :
+	<input type="text"name="universityname" placeholder="Universit Name"style="font-size:30px;"></p>
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Age................ :
+	<input id="kara" type="text"name="age" placeholder="Age"style="font-size:30px;"></p>
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">
+	Male <input type="radio" name="gender" value="Male" >
+	Female <input type="radio" name="gender" value="Female"> </p>	
+
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Phone Number........:
+	<input id="vijay"type="text"name="phone" placeholder="10 digit mobile no"style="font-size:30px;"></p>
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Email ID.............:
+	<input id="email"type="text"name="email" placeholder="example@email.com"style="font-size:30px;"></p>
+
+
+<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Password. --:	
+<input type="password"name="password"placeholder="password" style="height:40px;width:200px;font-size:30px;">
+
+	<p style="color:yellow;font-size:30px;background-color:blue;opacity:.8;">Re-type-Password --:
+	<input type="password"name="repassword"placeholder="re-password" style="height:40px;width:200px;font-size:30px;">
+	
+	</p><input type="submit" value="submit" style="color:yellow;font-size:30px;background-color:green;opacity:.8;">
+</form>
+</body>
+</html>
